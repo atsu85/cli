@@ -26,6 +26,12 @@
   "dependencies": {
     "aurelia-dependency-injection": "^1.0.0",
     "aurelia-polyfills": "^1.0.0",
-    "npm": "^3.10.5"
-  }
+    "npm": "^3.10.5",
+    "snyk": "^1.124.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
